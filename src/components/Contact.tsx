@@ -29,6 +29,7 @@ const Contact = () => {
                 name="email"
                 type="email"
                 label="Email"
+                required
               />
             </FormControl>
             <FormControl>
@@ -46,6 +47,7 @@ const Contact = () => {
               label="Message"
               multiline
               rows={5}
+              required
             />
             <Button
               type="submit"
