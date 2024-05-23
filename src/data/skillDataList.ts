@@ -12,7 +12,7 @@ import testIcon from "../assets/SkillsIcon/exam-mode.svg";
 import fastApiIcon from "../assets/SkillsIcon/fastapi-1.svg";
 import godotIcon from "../assets/SkillsIcon/file-type-godot.svg";
 import reactIcon from "../assets/SkillsIcon/file-type-reactjs.svg";
-import visualStudioIcon from "../assets/SkillsIcon/file-type-vscode.svg";
+import visualStudioCodeIcon from "../assets/SkillsIcon/file-type-vscode.svg";
 import gameDevIcon from "../assets/SkillsIcon/game-controller-outline.svg";
 import githubIcon from "../assets/SkillsIcon/github.svg";
 import htmlIcon from "../assets/SkillsIcon/html-5.svg";
@@ -45,6 +45,12 @@ import webDevIcon from "../assets/SkillsIcon/window-restore.svg";
 import powerBiIcon from "../assets/SkillsIcon/power-bi.svg";
 import reportBuilderIcon from "../assets/SkillsIcon/report-builder.svg";
 import googleSheetsIcon from "../assets/SkillsIcon/google-sheets.png";
+import appsIcon from "../assets/SkillsIcon/application.svg";
+import netFrameworkIcon from "../assets/SkillsIcon/net-framework.svg";
+import androidIcon from "../assets/SkillsIcon/android-os.svg";
+import androidStudioIcon from "../assets/SkillsIcon/androidStudio.png";
+import kotlinIcon from "../assets/SkillsIcon/kotlin.png";
+import visualStudioIcon from "../assets/SkillsIcon/visualStudio.png";
 
 export interface ISkillData {
   header: string;
@@ -100,12 +106,27 @@ const skillDataList: ISkillData[] = [
             icon: cSharpIcon,
             content: [],
           },
+          {
+            name: "Kotlin",
+            icon: kotlinIcon,
+            content: [],
+          },
         ],
       },
       {
         header: "Game Development",
         icon: gameDevIcon,
         content: [{ name: "Godot", icon: godotIcon, content: [] }],
+      },
+      {
+        header: "Software Development",
+        icon: appsIcon,
+        content: [{ name: ".Net Framework", icon: netFrameworkIcon, content: [] }],
+      },
+      {
+        header: "Android Development",
+        icon: androidIcon,
+        content: [{ name: "Android Studio", icon: androidStudioIcon, content: [] }],
       },
       {
         header: "Web Development",
@@ -226,6 +247,7 @@ const skillDataList: ISkillData[] = [
             name: "IDE + Text editors",
             icon: ideIcon,
             content: [
+              { name: "Visual Studio Code", icon: visualStudioCodeIcon },
               { name: "Visual Studio", icon: visualStudioIcon },
               { name: "Sublime Text", icon: sublimeIcon },
               { name: "JGrasp", icon: jGraspIcon },
