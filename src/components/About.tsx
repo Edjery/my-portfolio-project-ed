@@ -39,7 +39,7 @@ const About = () => {
             </Typography>
           </Stack>
         </Grid>
-        <Grid item xs={12} lg={6} sx={{textAlign: "center"}}>
+        <Grid item xs={12} lg={6} sx={{ textAlign: "center" }}>
           <Box
             component="img"
             alt="about-image"

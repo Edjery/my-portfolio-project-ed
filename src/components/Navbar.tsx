@@ -17,7 +17,6 @@ import ToggleColorMode from "./ui/ToggleColorMode";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Projects", "Skills", "About", "Contact"];
-// TODO: Add anchor links
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);

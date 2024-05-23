@@ -17,7 +17,12 @@ const Header = () => {
                 component="img"
                 alt="header-image"
                 src={headerPerson}
-                sx={{ width: "100%", height: "auto", objectFit: "cover" }}
+                sx={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "contain",
+                  borderRadius: { xs: 100, md: 0 },
+                }}
               />
             </Box>
           </Grid>
@@ -25,16 +30,22 @@ const Header = () => {
             <Box
               sx={{ textAlign: { xs: "center", sm: "left" }, my: { xs: 5 } }}
             >
-              <Typography variant="h6" sx={{ fontSize: { xs: 30, sm: 25, lg: 30 } }}>
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: 30, sm: 25, lg: 30 } }}
+              >
                 Edjery Gumbao
               </Typography>
               <Divider
-                sx={{ 
+                sx={{
                   mb: { xs: 3, lg: 0 },
                   display: { xs: "block", md: "none" },
                 }}
               />
-              <Typography variant="h3" sx={{ fontWeight: "bold", fontSize: { xs: 30, lg: 50 } } }>
+              <Typography
+                variant="h3"
+                sx={{ fontWeight: "bold", fontSize: { xs: 30, lg: 50 } }}
+              >
                 Passionately Crafting Software Solutions
               </Typography>
             </Box>

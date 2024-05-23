@@ -39,11 +39,13 @@ function App() {
           </Box>
           <Toolbar />
           <Header />
-          <Stack maxWidth={1200} mx="auto" px={{ xs: 5, md: 10 }} spacing={15}>
+          <Stack maxWidth={1200} mx="auto" px={{ xs: 0, md: 10 }} spacing={15}>
             <Box component="div" id="Projects" />
             <Projects />
             <Box component="div" id="Skills" />
             <Skills />
+          </Stack>
+          <Stack maxWidth={1200} mx="auto" px={{ xs: 5, md: 10 }} spacing={15}>
             <Box component="div" id="About" />
             <About />
             <Box component="div" id="Contact" />
