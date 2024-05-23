@@ -30,7 +30,7 @@ const Skills = () => {
     <Stack spacing={5}>
       <SectionTitle text="Skills" />
 
-      <Paper elevation={10} sx={{ p: 3 }}>
+      <Paper elevation={10} sx={{ bgcolor: "info.main" }}>
         <Stack direction="row">
           <ListItemButton onClick={handleFirstCol}>
             <ListItemIcon>

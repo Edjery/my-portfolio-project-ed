@@ -24,7 +24,7 @@ const ListItemWithIcon = ({ name, icon }: Props) => {
           />
         </ListItemIcon>
       ) : null}
-      <ListItemText primary={name} />
+      <ListItemText primary={name} sx={{ color: "text.primary" }} />
     </ListItem>
   );
 };

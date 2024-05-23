@@ -42,6 +42,9 @@ import virtualEnvIcon from "../assets/SkillsIcon/virtual-guest.svg";
 import frontEndIcon from "../assets/SkillsIcon/website-1.svg";
 import fullStackIcon from "../assets/SkillsIcon/website.svg";
 import webDevIcon from "../assets/SkillsIcon/window-restore.svg";
+import powerBiIcon from "../assets/SkillsIcon/power-bi.svg";
+import reportBuilderIcon from "../assets/SkillsIcon/report-builder.svg";
+import googleSheetsIcon from "../assets/SkillsIcon/google-sheets.png";
 
 export interface ISkillData {
   header: string;
@@ -183,6 +186,14 @@ const skillDataList: ISkillData[] = [
         ],
       },
       {
+        header: "Data Analytics",
+        icon: backEndIcon,
+        content: [
+          { name: "Report Builder", icon: reportBuilderIcon, content: [] }, 
+          { name: "Power BI", icon: powerBiIcon, content: [] }, 
+          { name: "Google Spreadsheets", icon: googleSheetsIcon, content: [] }],
+      },
+      {
         header: "Version Control",
         icon: versionConIcon,
         content: [{ name: "Git + GitHub", icon: githubIcon, content: [] }],
@@ -265,7 +276,7 @@ const skillDataList: ISkillData[] = [
         ],
       },
       {
-        header: "Front-end",
+        header: "Front-end development",
         icon: frontEndIcon,
         content: [
           {
@@ -273,10 +284,15 @@ const skillDataList: ISkillData[] = [
             icon: "",
             content: [],
           },
+          {
+            name: "Add additional webpage/s to an already existing website",
+            icon: "",
+            content: [],
+          },
         ],
       },
       {
-        header: "Back-end",
+        header: "Back-end development",
         icon: backEndIcon,
         content: [
           { name: "Develop APIs", icon: "", content: [] },
@@ -284,9 +300,20 @@ const skillDataList: ISkillData[] = [
         ],
       },
       {
+        header: "Data analytics",
+        icon: backEndIcon,
+        content: [
+          { name: "Gathering data from multiple sources (databases, APIs, spreadsheets).", icon: "", content: [] },
+          { name: "Ensuring data quality by handling missing values and correcting errors", icon: "", content: [] },
+          { name: "Converting and normalizing data for analysis.", icon: "", content: [] },
+          { name: "Creating charts, graphs, and dashboards to present data insights.", icon: "", content: [] },
+          { name: "Summarizing results and making recommendations based on analysis.", icon: "", content: [] },
+        ],
+      },  
+      {
         header: "Testing & Debugging",
         icon: testingIcon,
-        content: [],
+        content: [{ name: "Troubleshoot problems regarding webpage issues", icon: "", content: [] }],
       },
     ],
   },
